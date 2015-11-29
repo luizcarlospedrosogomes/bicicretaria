@@ -1,0 +1,336 @@
+<html><head>
+    <title>Bike | Home</title>
+    <link rel="icon" href="bike.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/carrinho.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="color.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="section section-info">
+          <div class="row text-left">
+            <div class="col-md-8 text-right">
+              <a class="btn btn-primary">Atendimento Online</a>
+            </div>
+            <div class="col-md-1 text-center">
+              <a class="btn btn-primary" href="contato.html">Contato</a>
+            </div>
+            <div class="col-md-1 text-right">
+              <a class="btn btn-primary">Login</a>
+            </div>
+            <div class="col-md-2 text-left">
+              <a class="btn btn-primary home-bt-carrinho carrinho_contador" href="carrinho.html">Carrinho</a>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="col-md-5">
+                <a href="index.html"><img src="bike_logo.png" class="img-responsive"></a>
+                <div class="col-md-12">
+                  <h1>
+                    <b>Bike.com</b>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 text-center">
+              <p class="text-info text-right"></p>
+              <form action="filtroBusca" method="post">
+                <h3 class="text-center">Encontre sua bike</h3>
+                <p></p>
+                <div class="row">
+                  <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 hidden-xs text-right">
+                    <input type="text" class="form-control" id="usr">
+                  </div>
+                </div>
+                <a class="btn btn-primary">Buscar</a>
+              </form>
+            </div>
+            <hr class="divider">
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <div class="btn-group btn-group-lg">
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Menor Preço <span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#">Maior Preço</a>
+                  </li>
+                  <li>
+                    <a href="#">Popularidade</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <span class="filtro filtrotitulo">Filtro</span>
+                  </div>
+                  <div class="jumbotron text-left">
+                    <a class="btn btn-primary btn-large">Preços</a>
+                    <div class="radio">
+                      <label class="filtro">
+                        <input type="radio" name="optradio">R$ 300,00 a R$ 500,00</label>
+                    </div>
+                    <div class="radio">
+                      <label class="filtro">
+                        <input type="radio" name="optradio">R$ 501,00 a R$ 700,00</label>
+                    </div>
+                    <div class="radio filtro">
+                      <label>
+                        <input type="radio" name="optradio">R$ 701,00 a R$ 900,00</label>
+                    </div>
+                    <div class="radio">
+                      <label class="filtro">
+                        <input type="radio" name="optradio">Acima de R$ 901,00</label>
+                    </div>
+                    <hr class="divider">
+                    <a class="btn btn-primary btn-large">Cor</a>
+                    <form action="filtroCor" method="post" class="filtro">
+                      <div class="radio">
+                        <label class="filtro">
+                          <input type="radio" name="optradio">Azul</label>
+                      </div>
+                      <div class="radio">
+                        <label class="filtro">
+                          <input type="radio" name="optradio">Preta</label>
+                      </div>
+                      <div class="radio">
+                        <label class="filtro">
+                          <input type="radio" name="optradio">Amarela</label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optradio">Branca</label>
+                      </div>
+                    </form>
+                    <hr class="divider">
+                    <form action="filtroAro" method="post">
+                      <a class="btn btn-primary btn-large">Aro</a>
+                    </form>
+                    <hr class="divider">
+                    <form action="filtroMarca" method="post" class="filtro">
+                      <a class="btn btn-primary btn-large">Marcas</a>
+                      <div class="checkbox">
+                        <label class="filtro">
+                          <input type="checkbox" value="">Caloi</label>
+                      </div>
+                      <div class="checkbox">
+                        <label class="filtro">
+                          <input type="checkbox" value="">Tork</label>
+                      </div>
+                      <div class="checkbox disabled">
+                        <label>
+                          <input type="checkbox" value="">Outras</label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-md-12">
+                    <a href="detalhe.html"><img src="bike.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title text-danger">R$ 1500,00</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe.html">Compre agora</a>
+                      </div>
+                    </div>
+                    <a href="detalhe4.html"><img src="bike.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1995,95</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe4.html">Compre agora</a>
+                      </div>
+                    </div>
+                    <a href="detalhe.html"><img src="bike.jpg" class="img-responsive"></a>
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1500,00</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe.html">Compre agora</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-md-12">
+                    <a href="detalhe2.html"><img src="bike.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="panel panel-primary text-center header">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1553,00</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe2.html">Compre agora</a>
+                      </div>
+                    </div>
+                    <a href="detalhe5.html"><img src="bike.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="panel panel-primary text-center header">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 2100,00</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe5.html">Compre agora</a>
+                      </div>
+                    </div>
+                    <a href="detalhe.html"><img src="bike.jpg" class="img-responsive"></a>
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1500,00</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe.html">Compre agora</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-md-12">
+                    <a href="detalhe3.html"><img src="bike.jpg" class="img-responsive"></a>
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1899,10</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe3.html">Compre agora</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <a href="detalhe.html"><img src="bike.jpg" class="img-responsive"></a>
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1500,00</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p>Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe.html">Compre agora</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <a href="detalhe.html"><img src="bike.jpg" class="img-responsive"></a>
+                    <div class="panel panel-primary text-center">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">R$ 1500,00</h3>
+                      </div>
+                      <div class="panel-body header">
+                        <p class="">Aro 16
+                          <br>21 marchas
+                          <br>ideal para cidade</p>
+                        <a class="btn btn-primary" href="detalhe.html">Compre agora</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <ul class="pagination">
+                <li>
+                  <a href="#">Prev</a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#">&gt;&gt;</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <footer class="section section-info">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h1>Bike.com</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="text-info text-right"></p>
+                  <h4 class="text-center">Visite nossas redes socias</h4>
+                  <p></p>
+                  <div class="row">
+                    <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-11 hidden-xs text-center">
+                      <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                      <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                      <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>

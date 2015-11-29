@@ -1,0 +1,128 @@
+<html><head>
+        <title>Bike | Carrinho&lt;produto&gt;</title>
+        <link rel="icon" href="bike.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/carrinho.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="color.css" rel="stylesheet" type="text/css">
+    </head>
+	<body>
+	<script>
+	
+	</script>
+	
+        <div class="section">
+            <div class="container">
+                <div class="section section-info">
+                    <div class="row">
+                        <div class="col-md-8 text-right">
+                            <a class="btn btn-primary">Atendimento Online</a>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <a class="btn btn-primary">Contato</a>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <a class="btn btn-primary" href="contato.html">Login</a>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <a class="btn btn-primary home-bt-carrinho carrinho_contador" href="carrinho.html">Carrinho</a>	
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-md-5">
+                                <a href="index.html"><img src="bike_logo.png" class="img-responsive"></a>
+                                <div class="col-md-12">
+                                    <h1>
+                                        <b>Bike.com</b>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <p class="text-info text-right"></p>
+                            <h3 class="text-center">Encontre sua bike</h3>
+                            <p></p>
+                            <div class="row">
+                                <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 hidden-xs text-right">
+                                    <input type="text" class="form-control" id="usr">
+                                </div>
+                            </div>
+                            <a class="btn btn-primary">Buscar</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                </div>
+				
+				<div class="table-responsive">
+					<table class="table" id="carrinho">
+						<thead>
+							<tr>
+								<th>Descrição</th>
+								<th>Preço</th>
+								<th>Remover</th>
+								<th>Foto</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td>Total (R$)</td>
+								<td id="total"><!-- total do carrinho--></td>
+								<td><button id="reset_carrinho" type="button" class="btn btn-danger" onclick="resetCarrinho();">Limpar Carrinho</button></td>
+								<td class="carrinho_contador"></td>
+							</tr>
+					    </tfoot>
+					</table>
+				</div>
+				<div class="row">
+					<div class="col-md-10"></div>
+					<div class="col-sm-2">
+						<button id="reset_carrinho" type="button" class="btn btn-warning">Finalizar compra</button>
+					</div>	
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-6"></div>
+					
+				</div>
+				
+                <footer class="section section-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1>Bike.com</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="text-info text-right"></p>
+                                <h4 class="text-center">Visite nossas redes socias</h4>
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-11 hidden-xs text-center">
+                                        <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                        <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                        <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    
+
+</body></html>
