@@ -11,7 +11,7 @@
     <link href="color.css" rel="stylesheet" type="text/css">
   </head><body>
     <div class="section">
-      <div class="container">
+      <div class="container zoom">
         <div class="section section-info">
           <div class="row">
             <div class="col-md-8 text-right">
@@ -56,9 +56,12 @@
           </div>
           <hr class="divider">
         </div>
+		
+		<button type="button" class="btn btn-default" onclick=aumentar();>A+</button>
+		<button type="button" class="btn btn-default" onclick=diminuir();>A-</button>
         <div class="row">
           <div class="col-md-4">
-            <div class="container">
+            <div class="container zoom">
               <div class="row">
                 <div class="col-md-2">
                   <a href="#"><img id="foto_bike" src="bike.jpg" class="img-responsive" width="128"></a>
@@ -80,10 +83,10 @@
             <a href="#"><img src="bike_dtl.png" class="img-responsive" width="850"></a>
           </div>
           <div class="col-md-4 text-center">
-            <div class="col-md-12">
+            <div class="col-md-12 zoom">
               <h2>Bicicleta Caloi - Colorida - Aro 26 - 21 marchas - Eletrica</h2>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 zoom">
               <a class="btn btn-primary precodetalhe precoUni"><b>R$ 2100,00</b></a>
             </div>
             <div class="col-md-12 text-right">
@@ -97,7 +100,7 @@
 		<button type="button" class="btn btn-default" onclick=contraste();>Contraste</button>
 		<button type="button" class="btn btn-default" onclick=uniContraste();>Sem Contraste</button>
         <footer class="section section-info">
-          <div class="container contraste">
+          <div class="container contraste zoom">
             <div class="row">
               <div class="col-sm-6">
                 <h1>Bike.com</h1>

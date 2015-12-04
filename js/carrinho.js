@@ -55,10 +55,27 @@ $(document).on('click','.addCar', function(){
 	
 	function contraste(){
 		 $(".contraste").css("background-color","black");
-		 $(".contraste").css("fontSize", 35);
+		 $(".contraste").css("fontSize", 20);
 	}
 	function uniContraste(){
 		$(".contraste").css("background-color","");
 		$(".contraste").css("fontSize", "");
 	}
+	
+	function aumentar(){
+		$(".zoom").css("fontSize", 30);
+	}
+	
+	function diminuir(){
+		$(".zoom").css("fontSize", "");
+	}
+	
+	function login(){
+		var usuarioNome = document.getElementById('usuario').value;
+		var usuarioSenha = document.getElementById('senha').value;
+		localStorage.setItem('usuario', usuarioNome);
+		localStorage.setItem('senha', usuarioSenha);
+		alert("Seja bem vindo " + localStorage.getItem('usuario') + "!");
+	}
+
 	
