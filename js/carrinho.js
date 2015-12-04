@@ -53,3 +53,12 @@ $(document).on('click','.addCar', function(){
 		$(".carrinho_contador").html('Carrinho <strong>'+ item_old.length+'</strong>');
 	};
 	
+	function contraste(){
+		 $(".contraste").css("background-color","black");
+		 $(".contraste").css("fontSize", 35);
+	}
+	function uniContraste(){
+		$(".contraste").css("background-color","");
+		$(".contraste").css("fontSize", "");
+	}
+	
